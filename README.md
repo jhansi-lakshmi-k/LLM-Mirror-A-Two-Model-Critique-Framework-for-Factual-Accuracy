@@ -60,6 +60,131 @@ No
 
 🕵️ Critique:
 Factual
+
+flan-t5-large is bboth acting as. crtique and the one which answers to questions from the user. the same both is evaluating its answers With "google/flan-t5-large"
+
+🔹 Question: What is the capital of Australia?
+
+🤖 Answer:
+ melbourne
+
+🔍 Critique:
+ hallucination 
+🔹 Question: Melbourne is the capital of which country?
+
+🤖 Answer:
+ australia
+
+🔍 Critique:
+ hallucination
+🔹 Question: Is Melbourne the capital of Australia?
+
+🤖 Answer:
+ no
+
+🔍 Critique:
+ factual
+
+🔹 Question: how does the weather look like today here at lubbock?
+
+🤖 Answer:
+ cold
+
+🔍 Critique:
+ factual
+🔹 Question: IS it hot today in lubbock?
+
+🤖 Answer:
+ It was 78°F
+
+🔍 Critique:
+ factual
+🔹 Question: lol you are wrong its 87F today in lubbock?
+
+🤖 Answer:
+ 77F
+
+🔍 Critique:
+ factual
+model flan-t5-base is the one answering to user questions and flan-t5-large is the critique and evaluating the performance of the above model 
+🔹 Question: What is the capital of Australia?
+
+ Answer (from flan-t5-base):
+ melbourne
+
+ Critique (from flan-t5-large):
+ factual correctness
+
+🔹 Question: Melbourne is the capital of which country?
+
+ Answer (from flan-t5-base):
+ australia
+
+ Critique (from flan-t5-large):
+ factual correctness
+🔹 Question: Is Melbourne the capital of Australia?
+
+ Answer (from flan-t5-base):
+ no
+
+ Critique (from flan-t5-large):
+ Factual correctness
+
+🔹 Question: how does the weather look like today here at lubbock?
+
+ Answer (from flan-t5-base):
+ rainy
+
+ Critique (from flan-t5-large):
+ The previous bot answered the question: What is the weather like today in Lubbock?
+
+🔹 Question: IS it hot today in lubbock?
+
+ Answer (from flan-t5-base):
+ no
+
+ Critique (from flan-t5-large):
+ It is not hot in Lubbock.
+
+🔹 Question: what is the capital of India ?
+
+ Answer (from flan-t5-base):
+ Delhi
+
+ Critique (from flan-t5-large):
+ This is the official language of India.
+🔹 Question: Is Earth Flat ?
+
+ Answer (from flan-t5-base):
+ no
+
+ Critique (from flan-t5-large):
+ Is Earth Flat? is a fictional science fiction series written by a human.
+
+🔹 Question: how do you know that earth is flat?
+
+ Answer (from flan-t5-base):
+ the Earth is flat
+
+ Critique (from flan-t5-large):
+ It is not true.
+
+🔹 Question: how many legs does a spider have?
+
+ Answer (from flan-t5-base):
+ four
+
+ Critique (from flan-t5-large):
+ This is true because it is a factual answer.
+
+🔹 Question: where is Lubbock ?
+
+ Answer (from flan-t5-base):
+ Lubbock is a town in the U.S. state of Oklahoma.
+
+ Critique (from flan-t5-large):
+ yes
+
 ---
 
 ## Note: Even the critique model sometimes incorrectly agrees with the hallucinated answer — a critical flaw that this project highlights.

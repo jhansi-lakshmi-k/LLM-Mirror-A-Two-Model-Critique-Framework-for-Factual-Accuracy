@@ -36,7 +36,7 @@ To understand how well language models can:
 
 ## 📊 Example Output
 
-``text
+```text
 
 🔹 Question: What is the capital of Australia?
 

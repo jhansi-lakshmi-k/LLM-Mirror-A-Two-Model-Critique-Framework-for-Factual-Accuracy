@@ -59,6 +59,7 @@ No
 
 🕵️ Critique:
 Factual
+---
 
 #Note: Even the critique model sometimes incorrectly agrees with the hallucinated answer — a critical flaw that this project highlights.
 #Key Observations

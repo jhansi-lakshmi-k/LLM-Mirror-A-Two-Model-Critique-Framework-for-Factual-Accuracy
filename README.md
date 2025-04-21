@@ -61,8 +61,8 @@ No
 Factual
 ---
 
-#Note: Even the critique model sometimes incorrectly agrees with the hallucinated answer — a critical flaw that this project highlights.
-#Key Observations
+##Note: Even the critique model sometimes incorrectly agrees with the hallucinated answer — a critical flaw that this project highlights.
+##Key Observations
 
 In the first part of the code we have used the same model "flan-t5-large" both as critique and the answering bot.
 
